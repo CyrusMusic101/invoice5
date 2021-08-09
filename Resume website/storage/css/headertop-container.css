@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/*-----------------------------------------------------------------
+  NOTE: PROJECT NOTES AND TODO
+-----------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.HT-headertop {
+  box-shadow: 0 1.5px 1.5px white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #5865f2;
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.HT-headertop .HT-headertop-logo {
+  justify-content: center;
+  position: absolute;
+  width: 65px;
+  left: 12px;
+  top: 1px;
+  cursor: pointer;
+  border-radius: 70%;
+  box-shadow: 0 0 13px 2px #fff;
+}
+
+.HT-headertop .HT-headertop-logo:hover {
+  background-color: #32354c;
+  transition: all .14s ease-in-out;
+  box-shadow: 0 0 13px 2px #fff;
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links {
+  position: relative;
+  list-style: none;
+  max-width: 1200px;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links li {
+  position: relative;
+  display: inline-block;
+  padding: 16px 13.5px;
+
+
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links a {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1em;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links  a:hover {
+  position: relative;
+  padding: 0px 3px;
+  margin: -3px;
+  border-bottom:3px solid #FFB700;
+}
+
+ .ST-social-logo {
+   position: absolute;
+   right: 0;
+   top: 25px;
+   margin-right: 50px;
+   color: #fff;
+   animation: pulse 2s infinite;
+   border-radius: 30%;
+   box-shadow: 0 0 6px 40px #fff;
+
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.03);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.03);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.03);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.03);
+    box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.03);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.03);
+      box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.03);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.03);
+      box-shadow: 5px 5px 5px 0 rgba(255, 255, 0, 0.03);
+  }
+}
+
+ .ST-social-logo:hover {
+   color: #e1644d;
+   border-radius: 50%;
+   box-shadow: 0 0 17px 7px #fff;
+ }
+
+ .ST-social-logo2 {
+   position: absolute;
+   right: 0;
+   padding: 0px 15px;
+   top: 25px;
+   margin-right: 80px;
+   color: #fff;
+   animation: pulse 2s infinite;
+   border-radius: 30%;
+   box-shadow: 0 0 6px 40px #fff;
+ }
+
+ .ST-social-logo2:hover {
+   color: #e1644d;
+   border-radius: 50%;
+   box-shadow: 0 0 17px 7px #fff;
+ }
+
+.mobilebtn-show {
+  display: none;
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links li.active .NT-navigation__links  {
+    display: block;
+}
+
+@media screen and (max-width: 661px) {
+
+  .ST-social-logo2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .HT-headertop {
+    padding: 0 20px;
+  }
+
+  .mobilebtn-show {
+    display: block;
+  }
+
+  .HT-headertop .NT-navigation-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: purple;
+    top: 60px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  .HT-headertop .NT-navigation-container.active {
+    left: 0;
+  }
+
+  .HT-headertop .NT-navigation-container .NT-navigation__links li.active .NT-navigation__links {
+    position: relative;
+    background: red;
+  }
+
+
+.HT-headertop .NT-navigation-container .NT-navigation__links {
+  display: block;
+  text-align: center;
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links li {
+  display: block;
+}
+
+.HT-headertop .NT-navigation-container .NT-navigation__links li a {
+  color: red;
+  text-decoration: bold;
+
+}
+}
+
+
+.IM-imagebox {
+  background-image: url("C:/Users/cyrus/Desktop/My Projects/Resume website/storage/images/head.jpeg");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+.IM-imagebox-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  height: auto;
+  margin-top: 200px;
+}
+
+.IM-imagebox-text {
+  margin-top: -17px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 4.7em;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+.IM-imagebox-text2 {
+  margin-top: -17px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.IM-imagebox-btn {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  border: 4px solid black;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite
+}
+
+.IM-imagebox-btn-text {
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.IM-imagebox-btn-text:hover {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-style: oblique;
+  animation: pulse 2s infinite;
+
+}
+ @keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+}

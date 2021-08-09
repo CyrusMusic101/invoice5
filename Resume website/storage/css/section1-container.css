@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*-----------------------------------------------------------------
+  NOTE: PROJECT NOTES AND TODO
+-----------------------------------------------------------------*/
+.AB-aboutbox {
+  height: 600px;;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.AB-aboutbox-image {
+  position: absolute;
+
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  top: 350px;
+  background-size: 400%;
+
+  animation: animate 20s linear infinite
+}
+}
+ @keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SV-servicebox {
+  height: 600px;;
+  width: 100%;
+  border-bottom: 1px solid black;
+  left: -100%;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.SV-servicebox-title {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 35px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+
+}
+
+
+.
